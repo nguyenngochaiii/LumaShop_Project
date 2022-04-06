@@ -6,14 +6,14 @@
   @include grid-pc;
 }
 
-.menu-headline-warp {
+.menu-headline-wrap {
   @include grid-col-12;
   position: relative;
   width: 479px;
   margin-top: 30px;
 }
 
-.headline-warp-text {
+.headline-wrap-text {
   margin-top: 0;
   margin-bottom: 25px;
   font-size: 44px;
@@ -22,31 +22,8 @@
   white-space: normal;
 }
 
-.text-warp {
-  margin-bottom: 15px;
-  font-size: 24px;
-  line-height: 32px;
-  font-weight: 300;
-}
-
 .layout-list {
   @include grid-col-6;
-
-  .item-overlay {
-    background-image: linear-gradient(180deg, rgba(24, 24, 29, 0.1), rgba(24, 24, 29, 0.1));
-    position: absolute;
-    z-index: 30;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    padding-left: 15px;
-    flex-direction: column;
-    text-decoration: none;
-    justify-content: flex-end;
-    cursor: pointer;
-  }
 
   .view-product-button {
     display: none;
@@ -73,13 +50,13 @@
   }
 }
 
-.menu-product-name-warp {
+.menu-product-name-wrap {
   @include grid-col-6;
   width: 273px;
   margin-top: 15px;
 }
 
-.menu-product-description-warp {
+.menu-product-description-wrap {
   @include grid-col-6;
   margin-top: 15px;
 
@@ -89,7 +66,7 @@
   }
 }
 
-.menu-button-warp {
+.menu-button-wrap {
   grid-column-end: 13;
   grid-column-start: 7;
   grid-row-end: 5;
@@ -108,7 +85,7 @@
     @include grid-laptop;
   }
 
-  .menu-headline-warp {
+  .menu-headline-wrap {
     @include grid-col-8;
     width: auto;
   }
@@ -131,17 +108,17 @@
     }
   }
 
-  .menu-product-name-warp {
+  .menu-product-name-wrap {
     @include grid-col-4;
     width: auto;
   }
 
-  .menu-product-description-warp {
+  .menu-product-description-wrap {
     @include grid-col-4;
     margin-top: 0;
   }
 
-  .menu-button-warp {
+  .menu-button-wrap {
     @include grid-col-8;
   }
 }
@@ -151,12 +128,12 @@
     @include grid-tablet;
   }
 
-  .headline-warp-text {
+  .headline-wrap-text {
     font-size: 34px;
     line-height: 42px;
   }
 
-  .menu-headline-warp {
+  .menu-headline-wrap {
     @include grid-col-6;
   }
 
@@ -168,15 +145,15 @@
     }
   }
 
-  .menu-product-name-warp {
+  .menu-product-name-wrap {
     @include grid-col-6;
   }
 
-  .menu-product-description-warp {
+  .menu-product-description-wrap {
     @include grid-col-6;
   }
 
-  .menu-button-warp {
+  .menu-button-wrap {
     @include grid-col-6;
   }
 }
@@ -186,7 +163,7 @@
     @include grid-mobile;
   }
 
-  .menu-headline-warp {
+  .menu-headline-wrap {
     @include grid-col-4;
   }
 
@@ -202,15 +179,15 @@
     }
   }
 
-  .menu-product-name-warp {
+  .menu-product-name-wrap {
     @include grid-col-4;
   }
 
-  .menu-product-description-warp {
+  .menu-product-description-wrap {
     @include grid-col-4;
   }
 
-  .menu-button-warp {
+  .menu-button-wrap {
     @include grid-col-4;
   }
 }
