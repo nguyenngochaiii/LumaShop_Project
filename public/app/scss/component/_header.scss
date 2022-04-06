@@ -143,7 +143,6 @@
     top: 0;
     transform: translateY(0px) translateX(0px);
     transition: transform 400ms ease 0s;
-    border-bottom: 1px solid #ebedee;
 
     a {
       padding: 14px 24px;
@@ -168,6 +167,11 @@
   .navbar-menu-overlay {
     &.active {
       display: block;
+      z-index: 15;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #ebedee;
+      background-color: #fff;
     }
   }
 }
