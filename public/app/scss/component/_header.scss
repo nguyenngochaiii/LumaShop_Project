@@ -22,7 +22,7 @@
   transform: translateY(0px) translateX(0px);
 
   a {
-    color: $black;
+    color: $Dark;
     text-decoration: none;
     line-height: 26px;
     padding: 10px;
@@ -30,7 +30,7 @@
 
   a:hover {
     opacity: 0.7;
-    color: $black;
+    color: $Dark;
   }
 }
 
@@ -68,7 +68,7 @@
 .cart-container {
   transform: none;
   min-width: 440px;
-  background-color: $black;
+  background-color: $Dark;
   box-shadow: 0 2px 6px 0 rgb(24 24 29 / 10%);
 
   &.active {
@@ -102,14 +102,14 @@
 
 .user-button {
   margin-left: 23px;
-  color: $black;
+  color: $Dark;
   padding: 3px;
   font-size: 16px;
   cursor: pointer;
 
   &:hover {
     opacity: .7;
-    color: $black;
+    color: $Dark;
   }
 }
 
@@ -145,7 +145,7 @@
 
     a {
       padding: 14px 24px;
-      color: $black;
+      color: $Dark;
     }
   }
 }

@@ -24,6 +24,10 @@
       background-position: 50% 50%;
       background-size: cover;
       transition: opacity 200ms ease;
+
+      &:hover {
+        opacity: .7;
+      }
     }
 
     .image-1 {
@@ -42,7 +46,7 @@
     font-size: 24px;
     line-height: 32px;
     font-weight: 300;
-    color: $black;
+    color: $Dark;
     text-decoration: none;
 
     &:hover {
@@ -57,7 +61,7 @@
 
     &:hover {
       .button-text {
-        color: $black;
+        color: $Dark;
         text-decoration: none;
       }
     }

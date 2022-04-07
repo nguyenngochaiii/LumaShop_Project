@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Work Sans', sans-serif;
-  color: $black;
+  color: $Dark;
   font-size: 16px;
   line-height: 24px;
   margin: 0;
@@ -126,7 +126,7 @@ a {
   padding: 30px 36px;
   justify-content: space-between;
   align-items: center;
-  background-color: $black;
+  background-color: $Dark;
   color: #fff;
   font-size: 16px;
   line-height: 26px;
@@ -215,7 +215,7 @@ a {
   z-index: 40;
   border-style: none;
   background-color: #fff;
-  color: $black;
+  color: $Dark;
   opacity: .8;
 }
 
@@ -228,7 +228,7 @@ a {
   z-index: 40;
   border-style: none;
   border-width: 0px;
-  background-color: $black;
+  background-color: $Dark;
   color: #fff;
   opacity: .8;
 }
@@ -293,7 +293,7 @@ a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  color: $black;
+  color: $Dark;
   font-size: 14px;
   line-height: 24px;
   font-weight: 500;
