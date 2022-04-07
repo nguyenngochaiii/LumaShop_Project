@@ -2,10 +2,6 @@
   padding-bottom: 50px;
 }
 
-.menu-grid {
-  @include grid-pc;
-}
-
 .menu-headline-wrap {
   @include grid-col-12;
   position: relative;
@@ -81,10 +77,6 @@
 }
 
 @media (max-width: 992px) {
-  .menu-grid {
-    @include grid-laptop;
-  }
-
   .menu-headline-wrap {
     @include grid-col-8;
     width: auto;
@@ -124,10 +116,6 @@
 }
 
 @media (max-width: 768px) {
-  .menu-grid {
-    @include grid-tablet;
-  }
-
   .headline-wrap-text {
     font-size: 34px;
     line-height: 42px;
@@ -159,10 +147,6 @@
 }
 
 @media (max-width: 479px) {
-  .menu-grid {
-    @include grid-mobile;
-  }
-
   .menu-headline-wrap {
     @include grid-col-4;
   }

@@ -3,10 +3,6 @@
   padding-bottom: 100px;
 }
 
-.our-product-grid {
-  @include grid-pc;
-}
-
 .our-product-image {
   grid-row-start: 1;
   grid-row-end: 2;
@@ -41,6 +37,10 @@
   .our-product-quote-wrap {
     padding-right: 40px;
   }
+
+  .btn-show-our-product:hover {
+    color: #fff;
+  }
 }
 
 .our-product-grey-background {
@@ -56,10 +56,6 @@
 }
 
 @media (max-width: 992px) {
-  .our-product-grid {
-    @include grid-laptop;
-  }
-
   .our-product-image {
     @include grid-col-8;
     position: static;
@@ -89,10 +85,6 @@
 }
 
 @media (max-width: 768px) {
-  .our-product-grid {
-    @include grid-tablet;
-  }
-
   .our-product-image {
     min-height: 400px;
     margin-bottom: 18px;
@@ -107,10 +99,6 @@
 }
 
 @media (max-width: 479px) {
-  .our-product-grid {
-    @include grid-mobile;
-  }
-
   .our-product-image {
     @include grid-col-4;
   }

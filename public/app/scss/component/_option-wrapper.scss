@@ -1,61 +1,26 @@
 .option-wrapper {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.option-grid {
-    @include grid-pc;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .option-title {
-    @include grid-col-6;
-
-    .text-label {
-        display: block;
-        margin-bottom: 10px;
-        opacity: 0.7;
-        font-size: 12px;
-        line-height: 20px;
-        font-weight: 500;
-        text-transform: uppercase;
-    }
-
-    .text-wrap {
-        margin-top: 10px;
-        margin-bottom: 0;
-        font-size: 30px;
-        line-height: 38px;
-        font-weight: 300;
-        text-transform: none;
-    }
+  @include grid-col-6;
 }
 
 @media (max-width: 992px) {
-    .option-grid {
-        @include grid-laptop;
-    }
-
-    .option-title {
-        @include grid-col-8;
-    }
+  .option-title {
+    @include grid-col-8;
+  }
 }
 
 @media (max-width: 768px) {
-    .option-grid {
-        @include grid-tablet;
-    }
-
-    .option-title {
-        @include grid-col-6;
-    }
+  .option-title {
+    @include grid-col-6;
+  }
 }
 
 @media (max-width: 479px) {
-    .option-grid {
-        @include grid-mobile;
-    }
-
-    .option-title {
-        @include grid-col-4;
-    }
+  .option-title {
+    @include grid-col-4;
+  }
 }

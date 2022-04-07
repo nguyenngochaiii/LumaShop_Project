@@ -9,9 +9,8 @@
   text-align: center;
 }
 
-.banner-grid {
+.layout-grid {
   position: relative;
-  @include grid-pc;
 }
 
 .banner-content {
@@ -43,10 +42,6 @@
     padding: 0;
   }
 
-  .banner-grid {
-    @include grid-laptop;
-  }
-
   .banner-content {
     @include grid-col-8;
   }
@@ -55,10 +50,6 @@
 @media (max-width: 768px) {
   .banner {
     min-height: 600px;
-  }
-
-  .banner-grid {
-    @include grid-tablet;
   }
 
   .banner-content {
@@ -72,10 +63,6 @@
 }
 
 @media (max-width: 479px) {
-  .banner-grid {
-    @include grid-mobile;
-  }
-
   .banner-content {
     @include grid-col-4;
   }

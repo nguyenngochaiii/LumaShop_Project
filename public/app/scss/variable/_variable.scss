@@ -13,20 +13,6 @@ body {
   text-decoration: none;
 }
 
-@mixin grid-pc {
-  display: grid;
-  width: 100%;
-  max-width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  grid-auto-flow: row;
-  grid-auto-columns: 1fr;
-  grid-column-gap: 36px;
-  grid-row-gap: 36px;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;
-}
-
 @mixin grid-laptop {
   width: 100%;
   max-width: 738px;
@@ -79,6 +65,20 @@ body {
   grid-row-end: span 1;
   grid-column-start: span 3;
   grid-column-end: span 3;
+}
+
+.layout-grid {
+  display: grid;
+  width: 100%;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  grid-auto-flow: row;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 36px;
+  grid-row-gap: 36px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
 }
 
 img {
@@ -199,6 +199,33 @@ a {
   text-transform: uppercase;
 }
 
+.inside-label {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: auto;
+  bottom: auto;
+  z-index: 40;
+  border-style: none;
+  background-color: #fff;
+  color: $black;
+  opacity: .8;
+}
+
+.sale-label {
+  position: absolute;
+  left: auto;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  z-index: 40;
+  border-style: none;
+  border-width: 0px;
+  background-color: $black;
+  color: #fff;
+  opacity: .8;
+}
+
 .item-overlay {
   background-image: linear-gradient(180deg, rgba(24, 24, 29, 0.1), rgba(24, 24, 29, 0.1));
   position: absolute;
@@ -236,7 +263,42 @@ a {
   white-space: normal;
 }
 
+.text-label {
+  display: block;
+  margin-bottom: 10px;
+  opacity: 0.7;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.text-wrap {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 300;
+  text-transform: none;
+}
+
+.button-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: $black;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 @media (max-width: 992px) {
+  .layout-grid {
+    @include grid-laptop;
+  }
+
   .section {
     padding-right: 24px;
     padding-left: 24px;
@@ -256,6 +318,10 @@ a {
 }
 
 @media (max-width: 768px) {
+  .layout-grid {
+    @include grid-tablet;
+  }
+
   .section {
     padding-right: 20px;
     padding-left: 20px;
@@ -268,6 +334,10 @@ a {
 }
 
 @media (max-width: 479px) {
+  .layout-grid {
+    @include grid-mobile;
+  }
+
   .section {
     padding-right: 16px;
     padding-left: 16px;
