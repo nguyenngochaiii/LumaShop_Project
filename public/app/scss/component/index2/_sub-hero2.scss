@@ -1,0 +1,21 @@
+.sub-hero2 {
+  .home-deco {
+    background-image: url(/public/app/images/Circa_Floor_Pedestal_Environ.jpg);
+  }
+}
+
+@media (max-width: 992px) {
+  .sub-hero2 {
+    .home-deco {
+      height: 260px;
+    }
+  }
+}
+
+@media (max-width: 479px) {
+  .sub-hero2 {
+    .home-deco {
+      height: 200px;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-.banner {
+.hero1 {
   min-height: 640px;
   padding-right: 36px;
   padding-left: 36px;
@@ -13,7 +13,7 @@
   position: relative;
 }
 
-.banner-content {
+.hero1-content {
   padding: 50px;
   flex-direction: column;
   align-items: center;
@@ -22,7 +22,7 @@
   grid-row-start: 1;
   grid-row-end: 2;
 
-  .banner-text {
+  .hero1-text {
     flex: 1;
     margin-bottom: 30px;
 
@@ -38,24 +38,24 @@
 }
 
 @media (max-width: 992px) {
-  .banner {
+  .hero1 {
     padding: 0;
   }
 
-  .banner-content {
+  .hero1-content {
     @include grid-col-8;
   }
 }
 
 @media (max-width: 768px) {
-  .banner {
+  .hero1 {
     min-height: 600px;
   }
 
-  .banner-content {
+  .hero1-content {
     @include grid-col-8;
 
-    .banner-text .text-content {
+    .hero1-text .text-content {
       font-size: 34px;
       line-height: 42px;
     }
@@ -63,7 +63,7 @@
 }
 
 @media (max-width: 479px) {
-  .banner-content {
+  .hero1-content {
     @include grid-col-4;
   }
 }

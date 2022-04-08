@@ -1,21 +1,8 @@
-.menu {
-  padding-bottom: 50px;
-}
-
 .menu-headline-wrap {
   @include grid-col-12;
   position: relative;
   width: 479px;
   margin-top: 30px;
-}
-
-.headline-wrap-text {
-  margin-top: 0;
-  margin-bottom: 25px;
-  font-size: 44px;
-  line-height: 52px;
-  font-weight: 300;
-  white-space: normal;
 }
 
 .layout-list {
@@ -55,11 +42,6 @@
 .menu-product-description-wrap {
   @include grid-col-6;
   margin-top: 15px;
-
-  .paragraph {
-    margin-bottom: 10px;
-    opacity: 0.7;
-  }
 }
 
 .menu-button-wrap {
@@ -116,11 +98,6 @@
 }
 
 @media (max-width: 768px) {
-  .headline-wrap-text {
-    font-size: 34px;
-    line-height: 42px;
-  }
-
   .menu-headline-wrap {
     @include grid-col-6;
   }

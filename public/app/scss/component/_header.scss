@@ -6,7 +6,7 @@
   line-height: 20px;
   font-weight: 500;
   text-transform: uppercase;
-  border-bottom: 1px solid #ebedee;
+  border-bottom: 1px solid $WhiteSmoke;
 }
 
 .nav-menu-wrap {
@@ -140,8 +140,6 @@
     display: flex;
     flex-direction: column;
     top: 0;
-    transform: translateY(0px) translateX(0px);
-    transition: transform 400ms ease 0s;
 
     a {
       padding: 14px 24px;
@@ -169,7 +167,7 @@
       z-index: 15;
       padding-top: 5px;
       padding-bottom: 5px;
-      border-bottom: 1px solid #ebedee;
+      border-bottom: 1px solid $WhiteSmoke;
       background-color: #fff;
     }
   }
