@@ -1,0 +1,19 @@
+.home-deco {
+  height: 360px;
+  background-image: url(/public/app/images/office_wall.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media (max-width: 992px) {
+  .home-deco {
+    height: 260px;
+  }
+}
+
+@media (max-width: 479px) {
+  .home-deco {
+    height: 200px;
+  }
+}

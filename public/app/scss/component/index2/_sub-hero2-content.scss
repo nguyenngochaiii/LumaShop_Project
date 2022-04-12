@@ -1,0 +1,59 @@
+.sub-hero2-content-wrap {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 6;
+  grid-column-end: 13;
+  position: relative;
+  display: flex;
+  margin-top: 220px;
+  padding: 47px 67px 57px;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #fff;
+  box-shadow: 0 3px 40px 0 rgb(0 0 0 / 5%);
+}
+
+.sub-hero2-content-image {
+  grid-column-end: 8;
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-row-start: 1;
+  height: 460px;
+  background-image: url(/public/app/images/uma_mini_hero_dusk.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+@media (max-width: 992px) {
+  .sub-hero2-content-wrap {
+    grid-column-start: 4;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .sub-hero2-content-image {
+    grid-column-end: 6;
+    align-self: stretch;
+  }
+}
+
+@media (max-width: 768px) {
+  .sub-hero2-content-wrap {
+    @include grid-col-6;
+  }
+
+  .sub-hero2-content-image {
+    @include grid-col-6;
+  }
+}
+
+@media (max-width: 479px) {
+  .sub-hero2-content-wrap {
+    @include grid-col-4;
+  }
+
+  .sub-hero2-content-image {
+    @include grid-col-4;
+  }
+}

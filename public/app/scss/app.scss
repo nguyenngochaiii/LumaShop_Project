@@ -1,3 +1,26 @@
+// variable
 @import "variable/color.scss";
 @import "variable/variable.scss";
+
+//index
 @import "component/header.scss";
+@import "component/index/hero1.scss";
+@import "component/index/menu.scss";
+@import "component/index/option-wrapper.scss";
+@import "component/index/menu-products.scss";
+@import "component/index/view-all-product.scss";
+@import "component/index/sub-hero1.scss";
+@import "component/index/show-our-product.scss";
+@import "component/index/our-articles.scss";
+@import "component/index/pictures-feed.scss";
+@import "component/footer.scss";
+
+//index2
+@import "component/index2/hero2.scss";
+@import "component/index2/product2-items.scss";
+@import "component/index2/headline-wrap-centered.scss";
+@import "component/index2/product3-list-item.scss";
+@import "component/index2/sub-hero2.scss";
+@import "component/index2/our-articles2.scss";
+@import "component/index2/sub-hero2-content.scss";
+@import "component/index2/subscribe.scss";

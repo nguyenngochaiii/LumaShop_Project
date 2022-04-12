@@ -1,0 +1,142 @@
+.articles-headline-wrap {
+  @include grid-col-12;
+  max-width: 582px;
+}
+
+.articles-list {
+  @include grid-col-6;
+
+  .articles-img-wrap {
+    position: relative;
+    margin-bottom: 30px;
+
+    .articles-image {
+      background-image: url(/public/app/images/bola_bedroom.jpg);
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: 260px;
+      background-position: 50% 50%;
+      background-size: cover;
+      transition: opacity 200ms ease;
+
+      &:hover {
+        opacity: .7;
+      }
+    }
+
+    .image-1 {
+      background-image: url(/public/app/images/lana_mini_livingroom.jpg);
+    }
+
+    .image-2 {
+      background-image: url(/public/app/images/office_wall.jpg);
+    }
+  }
+
+  .articles-link {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 300;
+    color: $Dark;
+    text-decoration: none;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  .articles-button-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &:hover {
+      .button-text {
+        color: $Dark;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .grid {
+    display: grid;
+    width: 100%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    grid-auto-flow: row;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 36px;
+    grid-row-gap: 36px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .articles-item {
+    @include grid-col-6;
+  }
+}
+
+@media (max-width: 992px) {
+  .articles-headline-wrap {
+    @include grid-col-8;
+  }
+
+  .articles-list {
+    @include grid-col-8;
+
+    .articles-button-wrap {
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      @include grid-laptop;
+    }
+
+    .articles-item {
+      @include grid-col-4;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .articles-headline-wrap {
+    @include grid-col-6;
+  }
+
+  .articles-list {
+    .articles-button-wrap {
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      @include grid-tablet;
+    }
+
+    .articles-item {
+      @include grid-col-6;
+    }
+  }
+}
+
+@media (max-width: 479px) {
+  .articles-headline-wrap {
+    @include grid-col-4;
+  }
+
+  .articles-list {
+    @include grid-col-4;
+
+    .articles-button-wrap {
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      @include grid-mobile;
+    }
+  }
+}

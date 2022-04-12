@@ -1,0 +1,111 @@
+.our-articles2 {
+  .articles-list {
+    @include grid-col-6;
+  }
+}
+
+.our-articles2 {
+  .articles-item {
+    @include grid-col-6;
+
+    .box-item-image {
+      position: relative;
+      display: flex;
+      min-height: 460px;
+      padding: 36px;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      background-position: 50% 50%;
+      background-size: cover;
+      color: #fff;
+    }
+
+    .image-1 {
+      background-image: url(/public/app/images/bola_sphere_pendant.jpg);
+    }
+
+    .image-2 {
+      background-image: url(/public/app/images/Circa_Floor_Pedestal_Environ.jpg);
+    }
+
+    .image-3 {
+      background-image: url(/public/app/images/bola_bedroom.jpg);
+    }
+
+    .articles-content {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex: 1;
+    }
+
+    .our-articles2-link {
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      color: #fff;
+      font-size: 30px;
+      line-height: 38px;
+      font-weight: 300;
+
+      &:hover {
+        opacity: .7;
+        text-decoration: none;
+      }
+    }
+
+    .articles-image-dark {
+      position: absolute;
+      left: 0%;
+      top: 0%;
+      right: 0%;
+      bottom: 0%;
+      background-color: rgba(24, 24, 29, 0.5);
+    }
+  }
+}
+
+
+@media (max-width: 992px) {
+  .our-articles2 {
+    .articles-list {
+      @include grid-col-8;
+
+      .grid {
+        @include grid-laptop;
+      }
+    }
+
+    .articles-item {
+      @include grid-col-8;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .our-articles2 {
+    .articles-list {
+      @include grid-col-6;
+
+      .grid {
+        @include grid-tablet;
+      }
+    }
+  }
+}
+
+@media (max-width: 479px) {
+  .our-articles2 {
+    .articles-list {
+      @include grid-col-4;
+
+      .grid {
+        @include grid-mobile;
+      }
+    }
+  }
+}

@@ -1,0 +1,107 @@
+.product3-list-item {
+  .box-item {
+    @include grid-col-4;
+
+    .view-item-button {
+      opacity: 0;
+    }
+
+    &:hover {
+      .view-item-button {
+        opacity: 1;
+      }
+    }
+
+    .image-wrap {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .image-1 {
+      background-image: url(/public/app/images/image_product_12.jpg);
+    }
+
+    .image-2 {
+      background-image: url(/public/app/images/image_product_11.jpg);
+    }
+
+    .image-3 {
+      background-image: url(/public/app/images/image_product_10.jpg);
+    }
+
+    .image-4 {
+      background-image: url(/public/app/images/image_product_9.jpg);
+    }
+
+    .image-5 {
+      background-image: url(/public/app/images/image_product_8.jpg);
+    }
+
+    .image-6 {
+      background-image: url(/public/app/images/image_product_7.jpg);
+    }
+
+    .image-7 {
+      background-image: url(/public/app/images/image_product_6.jpg);
+    }
+
+    .image-8 {
+      background-image: url(/public/app/images/image_product_5.jpg);
+    }
+
+    .image-9 {
+      background-image: url(/public/app/images/image_product_4.jpeg);
+    }
+
+    .image-10 {
+      background-image: url(/public/app/images/image_product_3.jpeg);
+    }
+
+    .image-11 {
+      background-image: url(/public/app/images/image_product_2.jpeg);
+    }
+
+    .image-12 {
+      background-image: url(/public/app/images/image_product_1.jpeg);
+    }
+  }
+
+  .product3-content-wrap {
+    margin-top: 26px;
+
+    .product-link {
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      color: #18181d;
+      line-height: 26px;
+      text-decoration: none;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .product3-list-item {
+    .box-item {
+      @include grid-col-4;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .product3-list-item {
+    .box-item {
+      @include grid-col-6;
+    }
+  }
+}
+
+@media (max-width: 479px) {
+  .product3-list-item {
+    .box-item {
+      @include grid-col-8;
+    }
+  }
+}

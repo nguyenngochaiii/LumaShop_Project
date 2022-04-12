@@ -1,0 +1,154 @@
+.menu-headline-wrap {
+  @include grid-col-12;
+  position: relative;
+  width: 479px;
+  margin-top: 30px;
+}
+
+.layout-list {
+  @include grid-col-6;
+
+  .view-product-button {
+    display: none;
+  }
+
+  &:hover {
+    .view-product-button {
+      display: block;
+    }
+  }
+
+  .menu-image-1 {
+    height: 700px;
+    background-image: url(/public/app/images/rose_gold_in_room.jpg);
+    background-position: 50% 0%;
+    background-size: cover;
+  }
+
+  .menu-image-2 {
+    height: 520px;
+    background-image: url(/public/app/images/belmont_essence_1_low.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+}
+
+.menu-product-name-wrap {
+  @include grid-col-6;
+  width: 273px;
+  margin-top: 15px;
+}
+
+.menu-product-description-wrap {
+  @include grid-col-6;
+  margin-top: 15px;
+}
+
+.menu-button-wrap {
+  grid-column-end: 13;
+  grid-column-start: 7;
+  grid-row-end: 5;
+  grid-row-start: 4;
+
+  &:hover {
+    .outline-button-large {
+      border: 1px solid #c2c3c4;
+      color: #1f2121;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .menu-headline-wrap {
+    @include grid-col-8;
+    width: auto;
+  }
+
+  .list-items-1 {
+    @include grid-col-8;
+  }
+
+  .list-items-2 {
+    @include grid-col-6;
+  }
+
+  .layout-list {
+    .menu-image-1 {
+      height: 640px;
+    }
+
+    .menu-image-2 {
+      height: 460px;
+    }
+  }
+
+  .menu-product-name-wrap {
+    @include grid-col-4;
+    width: auto;
+  }
+
+  .menu-product-description-wrap {
+    @include grid-col-4;
+    margin-top: 0;
+  }
+
+  .menu-button-wrap {
+    @include grid-col-8;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-headline-wrap {
+    @include grid-col-6;
+  }
+
+  .layout-list {
+    @include grid-col-6;
+
+    .menu-image-1 {
+      height: 460px;
+    }
+  }
+
+  .menu-product-name-wrap {
+    @include grid-col-6;
+  }
+
+  .menu-product-description-wrap {
+    @include grid-col-6;
+  }
+
+  .menu-button-wrap {
+    @include grid-col-6;
+  }
+}
+
+@media (max-width: 479px) {
+  .menu-headline-wrap {
+    @include grid-col-4;
+  }
+
+  .layout-list {
+    @include grid-col-4;
+
+    .menu-image-1 {
+      height: 400px;
+    }
+
+    .menu-image-2 {
+      height: 400px;
+    }
+  }
+
+  .menu-product-name-wrap {
+    @include grid-col-4;
+  }
+
+  .menu-product-description-wrap {
+    @include grid-col-4;
+  }
+
+  .menu-button-wrap {
+    @include grid-col-4;
+  }
+}
