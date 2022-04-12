@@ -2282,6 +2282,12 @@ a {
 .box-image .image-3 {
   background-image: url(/public/app/images/Cielo_SatinAluminumEnv.jpg);
 }
+.box-image .overlay-button {
+  opacity: 0;
+}
+.box-image .overlay-button:hover {
+  opacity: 1;
+}
 
 @media (max-width: 992px) {
   .all-products .all-products-headline-wrap {

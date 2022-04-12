@@ -36,6 +36,14 @@
   .image-3 {
     background-image: url(/public/app/images/Cielo_SatinAluminumEnv.jpg);
   }
+
+  .overlay-button {
+    opacity: 0;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 
 @media (max-width: 992px) {
