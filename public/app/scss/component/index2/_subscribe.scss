@@ -27,8 +27,12 @@
   .subscribe-form-wrap {
     @include grid-col-1;
     display: grid;
-    @include grid-mobile;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-self: stretch;
+
 
     .subscribe-btn {
       border: 0;
@@ -63,6 +67,11 @@
   .subscribe-content-form {
     grid-column-start: 1;
     grid-column-end: 9;
+
+    .subscribe-form-wrap {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+    }
   }
 }
 
@@ -83,5 +92,9 @@
 
   .subscribe-content-form {
     @include grid-col-4;
+
+    .subscribe-form-wrap {
+      grid-row-gap: 10px;
+    }
   }
 }
