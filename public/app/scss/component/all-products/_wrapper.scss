@@ -1,0 +1,43 @@
+.wrapper {
+  .wrapper-headline-wrap {
+    @include grid-col-5;
+    justify-self: start;
+    align-self: center;
+  }
+
+  .wrapper-section-headline {
+    margin-bottom: 36px;
+  }
+
+  .button-label {
+    color: #fff;
+  }
+
+  .arrow-icon {
+    color: #fff;
+  }
+}
+
+@media (max-width: 992px) {
+  .wrapper {
+    .wrapper-headline-wrap {
+      @include grid-col-8;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    .wrapper-headline-wrap {
+      @include grid-col-6;
+    }
+  }
+}
+
+@media (max-width: 479px) {
+  .wrapper {
+    .wrapper-headline-wrap {
+      @include grid-col-4;
+    }
+  }
+}
