@@ -1,0 +1,38 @@
+.category-detail-wrap {
+  display: flex;
+  min-height: 360px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  justify-content: center;
+  align-items: center;
+  background-position: 50% 50%;
+  background-size: cover;
+  color: #fff;
+}
+
+.category-detail {
+  .all-products-header {
+    background-image: linear-gradient(180deg, rgba(24, 24, 29, 0.45), rgba(24, 24, 29, 0.45)), url(/public/app/images/belmont_essence_1_low.jpg);
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+  }
+
+  .headline-wrap-centered {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 4;
+    grid-column-end: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .category-detail {
+    .headline-wrap-centered {
+      @include grid-col-8;
+    }
+  }
+}
