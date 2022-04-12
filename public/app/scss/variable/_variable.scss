@@ -39,6 +39,13 @@ body {
   grid-column-end: span 12;
 }
 
+@mixin grid-col-9 {
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+  grid-column-start: span 9;
+  grid-column-end: span 9;
+}
+
 @mixin grid-col-8 {
   grid-row-start: span 1;
   grid-row-end: span 1;
