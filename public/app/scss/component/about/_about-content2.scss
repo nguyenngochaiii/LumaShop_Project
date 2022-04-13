@@ -1,0 +1,92 @@
+.about-content2 {
+  .about-content2-headline-wrap {
+    max-width: 582px;
+    @include grid-col-12;
+  }
+
+  .box-item-author {
+    @include grid-col-3;
+  }
+}
+
+.box-item-author {
+  .content-author-pic {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 26px;
+    flex: 0 0 auto;
+    background-position: 50% 0%;
+    background-size: cover;
+  }
+
+  .content-image1 {
+    background-image: url(/public/app/images/Avatar_1.jpeg);
+  }
+
+  .content-image2 {
+    background-image: url(/public/app/images/Avatar_2.jpeg);
+  }
+
+  .content-image3 {
+    background-image: url(/public/app/images/Avatar_3.jpeg);
+  }
+
+  .content-image4 {
+    background-image: url(/public/app/images/Avatar_4.jpeg);
+  }
+
+  .content-image5 {
+    background-image: url(/public/app/images/Avatar_5.jpeg);
+  }
+
+  .content-image6 {
+    background-image: url(/public/app/images/Avatar_6.jpeg);
+  }
+
+  .content-image7 {
+    background-image: url(/public/app/images/Avatar_7.jpeg);
+  }
+
+  .content-image8 {
+    background-image: url(/public/app/images/Avatar_8.jpeg);
+  }
+}
+
+@media (max-width: 992px) {
+  .about-content2 {
+    .about-content2-headline-wrap {
+      max-width: none;
+      @include grid-col-8;
+    }
+
+    .box-item-author {
+      @include grid-col-4;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content2 {
+    .about-content2-headline-wrap {
+      max-width: none;
+      @include grid-col-6;
+    }
+
+    .box-item-author {
+      @include grid-col-6;
+    }
+  }
+}
+
+@media (max-width: 479px) {
+  .about-content2 {
+    .about-content2-headline-wrap {
+      max-width: none;
+      @include grid-col-4;
+    }
+
+    .box-item-author {
+      @include grid-col-4;
+    }
+  }
+}
